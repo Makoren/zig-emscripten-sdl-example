@@ -10,6 +10,6 @@ pub fn build(b: *std.Build) void {
         .optimize = .Debug,
     });
     lib.linkLibC();
-    lib.addIncludePath(.{ .path = "/Users/mak/dev/_SDKs/emsdk/upstream/emscripten/cache/sysroot/include" });
+    lib.addIncludePath(.{ .path = "/path/to/emsdk/upstream/emscripten/cache/sysroot/include" });
     b.installArtifact(lib);
 }
